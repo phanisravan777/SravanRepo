@@ -1,1 +1,7 @@
-print("hello world")
+def printName(name):
+  print("name")
+
+a = printName("hello")
+  
+  
+  
