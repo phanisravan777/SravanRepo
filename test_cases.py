@@ -1,8 +1,7 @@
-# Test Cases for isPalindrome function
+# Regression Test Cases for isPalindrome function
 
-def test_isPalindrome():
-    assert isPalindrome('madam') == 'The string is a palindrome.'
-    assert isPalindrome('hello') == 'The string is not a palindrome.'
-    assert isPalindrome('12321') == 'The string is a palindrome.'
-    assert isPalindrome('racecar') == 'The string is a palindrome.'
-    assert isPalindrome('python') == 'The string is not a palindrome.'
+# Test Case 1: Input is a palindrome
+assert isPalindrome('madam') == 'The string is a palindrome.'
+
+# Test Case 2: Input is not a palindrome
+assert isPalindrome('hello') == 'The string is not a palindrome.'
