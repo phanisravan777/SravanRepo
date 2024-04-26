@@ -1,7 +1,7 @@
-# Regression Test Cases for isPalindrome function
+# Test cases for generate_fibonacci_series
 
-def test_isPalindrome():
-    assert isPalindrome('madam') == 'The string is a palindrome.'
-    assert isPalindrome('hello') == 'The string is not a palindrome.'
-    assert isPalindrome('level') == 'The string is a palindrome.'
-    assert isPalindrome('radar') == 'The string is a palindrome.'
+def test_generate_fibonacci_series_unitTest():
+    assert generate_fibonacci_series(0) == []
+    assert generate_fibonacci_series(1) == [0]
+    assert generate_fibonacci_series(5) == [0, 1, 1, 2, 3]
+    assert generate_fibonacci_series(10) == [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
