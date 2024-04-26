@@ -1,25 +1,8 @@
-# Regression Test Cases for isPalindrome function
+# Test cases for generate_fibonacci_series
 
-# Test Case 1: Check if empty string is a palindrome
-Input: ""
-Expected Output: "The string is a palindrome."
-
-# Test Case 2: Check if single character string is a palindrome
-Input: "a"
-Expected Output: "The string is a palindrome."
-
-# Test Case 3: Check if palindrome string
-Input: "madam"
-Expected Output: "The string is a palindrome."
-
-# Test Case 4: Check if non-palindrome string
-Input: "hello"
-Expected Output: "The string is not a palindrome."
-
-# Test Case 5: Check if palindrome string with spaces
-Input: "nurses run"
-Expected Output: "The string is a palindrome."
-
-# Test Case 6: Check if non-palindrome string with spaces
-Input: "hello world"
-Expected Output: "The string is not a palindrome."
+def test_generate_fibonacci_series_unitTest():
+    assert generate_fibonacci_series(0) == []
+    assert generate_fibonacci_series(1) == [0]
+    assert generate_fibonacci_series(2) == [0, 1]
+    assert generate_fibonacci_series(5) == [0, 1, 1, 2, 3]
+    assert generate_fibonacci_series(10) == [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
