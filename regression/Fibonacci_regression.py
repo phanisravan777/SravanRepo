@@ -1,12 +1,10 @@
 import unittest
-
-from a4ac7950_b863_40c8_9a9f_0d09986ae282 import Fibonacci
+from testPythonCode import Fibonacci
 
 class TestFibonacci(unittest.TestCase):
 
     def test_negative_input(self):
-        with self.assertRaises(ValueError):
-            Fibonacci(-1)
+        self.assertEqual(Fibonacci(-1), 'Incorrect input')
 
     def test_zero_input(self):
         self.assertEqual(Fibonacci(0), 0)

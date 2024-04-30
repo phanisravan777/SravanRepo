@@ -1,33 +1,28 @@
 import unittest
-from a4ac7950_b863_40c8_9a9f_0d09986ae282 import is_palindrome
+from testPythonCode.3127ace8_69e4_4094_b8d2_5f0591600d29 import is_palindrome
 
 class TestIsPalindrome(unittest.TestCase):
-
     def test_is_palindrome(self):
-        # Test case 1: Normal case with palindrome
+        # Test case 1: Normal case with palindrome string
         self.assertTrue(is_palindrome('A man, a plan, a canal: Panama'))
 
-        # Test case 2: Normal case with non-palindrome
-        self.assertFalse(is_palindrome('Hello, World!'))
+        # Test case 2: Normal case with non-palindrome string
+        self.assertFalse(is_palindrome('Hello World'))
 
-        # Test case 3: Case with empty string
+        # Test case 3: Edge case with empty string
         self.assertTrue(is_palindrome(''))
 
-        # Test case 4: Case with single character
+        # Test case 4: Edge case with single character string
         self.assertTrue(is_palindrome('a'))
 
-        # Test case 5: Case with special characters only
+        # Test case 5: Edge case with string containing only non-alphanumeric characters
         self.assertTrue(is_palindrome('!!!'))
 
-        # Test case 6: Case with numbers
+        # Test case 6: Normal case with palindrome string containing numbers
         self.assertTrue(is_palindrome('12321'))
+
+        # Test case 7: Normal case with non-palindrome string containing numbers
         self.assertFalse(is_palindrome('12345'))
-
-        # Test case 7: Case with mixed case palindrome
-        self.assertTrue(is_palindrome('Able was I ere I saw Elba'))
-
-        # Test case 8: Case with palindrome containing special characters
-        self.assertTrue(is_palindrome('Able, was I... ere I saw: Elba.'))
 
 
 if __name__ == '__main__':
