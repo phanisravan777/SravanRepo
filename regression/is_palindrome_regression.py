@@ -1,6 +1,10 @@
-def is_palindrome(s):
-    # Normalize the string by converting it to lowercase and removing non-alphanumeric characters
-    normalized_string = ''.join(char.lower() for char in s if char.isalnum())
-    
-    # Check if the normalized string reads the same forwards and backwards
-    return normalized_string == normalized_string[::-1]
+import unittest
+
+class TestIsPalindrome(unittest.TestCase):
+    def test_palindrome(self):
+        self.assertTrue(is_palindrome("A man, a plan, a canal, Panama"))
+        self.assertTrue(is_palindrome("racecar"))
+        self.assertFalse(is_palindrome("hello"))
+
+if __name__ == '__main__':
+    unittest.main()
