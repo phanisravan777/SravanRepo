@@ -1,5 +1,5 @@
 import unittest
-from d0b0c971_1d95_4582_b105_8de9ef83f3a2 import is_palindrome
+from a4ac7950_b863_40c8_9a9f_0d09986ae282 import is_palindrome
 
 class TestIsPalindrome(unittest.TestCase):
 
@@ -15,6 +15,8 @@ class TestIsPalindrome(unittest.TestCase):
         self.assertTrue(is_palindrome('A'))  # Single character
         self.assertTrue(is_palindrome('Aa'))  # Case insensitivity
         self.assertFalse(is_palindrome('AB'))  # Two different characters
+        self.assertTrue(is_palindrome('12321'))  # Numeric palindrome
+        self.assertFalse(is_palindrome('12345'))  # Non-palindrome number
 
 
 if __name__ == '__main__':

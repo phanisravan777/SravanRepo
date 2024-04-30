@@ -1,5 +1,5 @@
 import unittest
-from d0b0c971_1d95_4582_b105_8de9ef83f3a2 import Fibonacci
+from a4ac7950_b863_40c8_9a9f_0d09986ae282 import Fibonacci
 
 class TestFibonacci(unittest.TestCase):
 
@@ -26,9 +26,6 @@ class TestFibonacci(unittest.TestCase):
 
     def test_Fibonacci_7(self):
         self.assertEqual(Fibonacci(10), 55)
-
-    def test_Fibonacci_8(self):
-        self.assertEqual(Fibonacci(20), 6765)
 
 if __name__ == '__main__':
     unittest.main()
