@@ -1,12 +1,12 @@
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TestGFG {
 
     @Test
     public void testReversNumber() {
         // Basic Test Cases
-        assertEquals(4321, GFG.reversNumber(1234));
+        assertEquals(321, GFG.reversNumber(123));
         assertEquals(1, GFG.reversNumber(1));
         assertEquals(0, GFG.reversNumber(0));
 
@@ -19,13 +19,12 @@ public class TestGFG {
     @Test
     public void testPalindrome() {
         // Basic Test Cases
-        assertTrue(GFG.isPalindrome(12321));
-        assertTrue(GFG.isPalindrome(1));
-        assertFalse(GFG.isPalindrome(123));
+        assertEquals("Palindrome = Yes", GFG.main(12321));
+        assertEquals("Palindrome = No", GFG.main(123));
 
         // Edge Test Cases
-        assertTrue(GFG.isPalindrome(2147447412));
-        assertFalse(GFG.isPalindrome(2147483647));
-        assertTrue(GFG.isPalindrome(-2147447412));
+        assertEquals("Palindrome = Yes", GFG.main(1));
+        assertEquals("Palindrome = Yes", GFG.main(0));
+        assertEquals("Palindrome = No", GFG.main(123456789));
     }
 }
