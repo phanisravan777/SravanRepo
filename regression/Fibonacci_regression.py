@@ -1,16 +1,25 @@
+import unittest
+from d0b0c971_1d95_4582_b105_8de9ef83f3a2 import Fibonacci
+
 class TestFibonacci(unittest.TestCase):
-    
-    def test_Fibonacci(self):
+
+    def test_negative_input(self):
+        self.assertEqual(Fibonacci(-1), 'Incorrect input')
+
+    def test_zero_input(self):
         self.assertEqual(Fibonacci(0), 0)
+
+    def test_one_input(self):
         self.assertEqual(Fibonacci(1), 1)
+
+    def test_two_input(self):
         self.assertEqual(Fibonacci(2), 1)
-        self.assertEqual(Fibonacci(3), 2)
-        self.assertEqual(Fibonacci(4), 3)
-        self.assertEqual(Fibonacci(5), 5)
+
+    def test_large_input(self):
+        self.assertEqual(Fibonacci(10), 55)
+
+    def test_random_input(self):
         self.assertEqual(Fibonacci(6), 8)
-        self.assertEqual(Fibonacci(7), 13)
-        self.assertEqual(Fibonacci(8), 21)
-        self.assertEqual(Fibonacci(9), 34)
 
 if __name__ == '__main__':
     unittest.main()
