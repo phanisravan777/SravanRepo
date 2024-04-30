@@ -1,6 +1,6 @@
 import unittest
+from testPythonCode.6d9490d9_960f_4fbc_8daf_e0b25dc6844a import is_palindrome
 
-from testPythonCode.3127ace8_69e4_4094_b8d2_5f0591600d29 import is_palindrome
 
 class TestIsPalindrome(unittest.TestCase):
 
@@ -14,8 +14,9 @@ class TestIsPalindrome(unittest.TestCase):
     def test_is_palindrome_edge(self):
         self.assertTrue(is_palindrome(''))  # Empty string
         self.assertTrue(is_palindrome('A'))  # Single character
-        self.assertTrue(is_palindrome('Aa'))  # Case insensitive
+        self.assertTrue(is_palindrome('Aa'))  # Case insensitivity
         self.assertFalse(is_palindrome('AB'))  # Two different characters
+
 
 if __name__ == '__main__':
     unittest.main()
